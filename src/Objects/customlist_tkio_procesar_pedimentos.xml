@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_tkio_procesar_pedimentos">
+  <description>Lista de estados para procesar las recepciones de articulo</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Procesar pedimentos</name>
+  <customvalues>
+    <customvalue scriptid="val_743413_t2220309_219">
+      <isinactive>F</isinactive>
+      <value>No procesar</value>
+    </customvalue>
+    <customvalue scriptid="val_743414_t2220309_547">
+      <isinactive>F</isinactive>
+      <value>Pendiente a procesar</value>
+    </customvalue>
+    <customvalue scriptid="val_743415_t2220309_286">
+      <isinactive>F</isinactive>
+      <value>En proceso de entrada</value>
+    </customvalue>
+    <customvalue scriptid="val_744006_t2220309_548">
+      <isinactive>F</isinactive>
+      <value>Procesado</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_efx_ped_type_movement">
+  <description>Indica cual es el tipo de movimiento para realizar el ajuste de inventario.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Tipo de movimiento</name>
+  <customvalues>
+    <customvalue scriptid="val_738028_t2220309_580">
+      <isinactive>F</isinactive>
+      <value>Entrada</value>
+    </customvalue>
+    <customvalue scriptid="val_738029_t2220309_595">
+      <isinactive>F</isinactive>
+      <value>Consumo</value>
+    </customvalue>
+  </customvalues>
+</customlist>

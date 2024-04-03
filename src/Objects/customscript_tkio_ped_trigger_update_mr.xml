@@ -1,0 +1,59 @@
+<mapreducescript scriptid="customscript_tkio_ped_trigger_update_mr">
+  <description>Script usado para ejecutar TKIO - Pedimentos actualizacion - MR</description>
+  <isinactive>F</isinactive>
+  <name>TKIO - Pedimentos actualizacion auto- MR</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/Tekiio/Pedimentos/Map_Reduce/_tkio_ped_trigger_effect_change_mr.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_tkio_ped_status_pending_to_pr">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Estado</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>[scriptid=customlist_tkio_procesar_pedimentos]</selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_tkio_ped_trigger_update_mr0">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <custscript_tkio_ped_status_pending_to_pr>[scriptid=customlist_tkio_procesar_pedimentos.val_743414_t2220309_547]</custscript_tkio_ped_status_pending_to_pr>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>TKIO- Pedimentos actualizacion auto-MR 0</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2024-03-21</startdate>
+          <starttime>00:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>
