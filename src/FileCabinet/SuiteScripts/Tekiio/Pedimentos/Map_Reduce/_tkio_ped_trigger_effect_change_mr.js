@@ -129,16 +129,16 @@ define(['N/log', 'N/url', 'N/search', 'N/record', 'N/runtime', 'N/task', '../Lib
                 var idTask = mrTask.submit();
 
                 log.debug({ title: 'idTask', details: idTask });
-                // value.dataToProcess.forEach((transactionPib) => {
-                //     record.submitFields({
-                //         type: transactionPib.recordType,
-                //         id: transactionPib.internalid.value,
-                //         values: {
-                //             custbody_tkio_status_process_ped: 3,
-                //             custbody_tkio_taskid_pedimento_process: idTask
-                //         }
-                //     })
-                // })
+                value.dataToProcess.forEach((transactionPib) => {
+                    record.submitFields({
+                        type: transactionPib.recordType,
+                        id: transactionPib.internalid.value,
+                        values: {
+                            custbody_tkio_status_process_ped: 3,
+                            custbody_tkio_taskid_pedimento_process: idTask
+                        }
+                    })
+                })
             } catch (e) {
                 log.error({ title: 'Error Map:', details: e });
             }

@@ -43,7 +43,7 @@ define(['N/log', 'N/url', 'N/search', 'N/record', 'N/ui/serverWidget', 'N/ui/mes
                                 form.addPageInitMessage({ type: message.Type.INFORMATION, message: 'La recepcion esta pendiente a procesar la entrada de pedimentos' }); break;
                                 break;
                             case 3:
-                                form.addPageInitMessage({ type: message.Type.INFORMATION, message: 'La recepcion esta siedo procesada la entrada de pedimentos' }); break;
+                                form.addPageInitMessage({ type: message.Type.INFORMATION, message: 'La recepcion esta siendo procesada la entrada de pedimentos' }); break;
                                 break;
                         }
                 }

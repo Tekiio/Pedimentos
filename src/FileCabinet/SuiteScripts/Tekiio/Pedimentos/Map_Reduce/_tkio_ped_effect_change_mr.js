@@ -344,14 +344,14 @@ define(['N/log', 'N/url', 'N/search', 'N/record', 'N/runtime', '../Lib/constants
                 log.debug({ title: 'typeof key', details: typeof key });
                 var dataGeneral = key.split(',')
                 // var value = JSON.parse(reduceContext.values);
-                // record.submitFields({
-                //     type: dataGeneral[1],
-                //     id: dataGeneral[0],
-                //     values: {
-                //         custbody_tkio_status_process_ped: 4,
-                //         custbody_tkio_taskid_pedimento_process: ''
-                //     }
-                // })
+                record.submitFields({
+                    type: dataGeneral[1],
+                    id: dataGeneral[0],
+                    values: {
+                        custbody_tkio_status_process_ped: 4,
+                        custbody_tkio_taskid_pedimento_process: ''
+                    }
+                })
             } catch (e) {
                 log.error({ title: 'Error reduce:', details: e });
             }

@@ -288,6 +288,7 @@ define(['N/log', 'N/search', 'N/record', 'N/ui/message', './constants.js'],
                 return []
             }
         }
+        // Se obtienen los datos de la transaccion, hasta el momento solamente Ajuste de inventario
         const getInfoToTransactionIA = (id, type) => {
             try {
 
